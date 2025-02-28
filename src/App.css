@@ -1,40 +1,73 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
 }
 
-
-.App-logo {
-  height: 100px; /* Adjust logo size */
-  width: auto;
-  margin-bottom: 20px;
+/* Prevent Content from Overlapping the Navbar */
+main {
+  padding-top: 80px; /* Adjust based on navbar height */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    /*animation: App-logo-spin infinite 20s linear;*/
-  }
+/* Apply fonts to the entire app */
+body {
+  font-family: "Karla", sans-serif;  /* Default font */
+  background-color: #fefae0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Markazi Text", serif;
+  color: #495e57;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Specific Heading Sizes */
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+h4 { font-size: 22px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+/* Paragraph Styles */
+p {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Span Styles */
+span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ee9972; /* Accent color */
+}
+/* Buttons */
+.button {
+  background-color: #e76f51;
   color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: #d64933;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Shadows */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
