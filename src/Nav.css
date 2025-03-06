@@ -3,7 +3,7 @@
     background: #8db097; /* Green background */
     padding: 10px 25px; /* Add spacing inside the box */
     display: flex; /* Enables horizontal layout */
-    justify-content: left;
+    justify-content: space-between;
     align-items: center; /* Aligns items vertically */
     position: fixed; /* Fixes the nav bar at the top */
     top: 0; /* Aligns nav to the top of the page */
@@ -23,6 +23,9 @@
 
 /* Logo Styling */
 .logo img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     height: 38px; /* Small logo */
     width: auto;
     margin-left: 30px;
@@ -32,7 +35,7 @@
   /* Style Navigation Links */
   .nav a {
     text-decoration: none;
-    color: white; /* Text color */
+    color: rgb(236, 233, 167); /* Text color */
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s;
@@ -42,3 +45,11 @@
   .nav a:hover {
     color: #f4ce14; /* Yellow accent */
   }
+  /* @media screen and (max-width: 2000px) {
+    .logo img {
+        width:  auto
+    }
+}
+@media screen and (max-width: 1150px) {}
+
+@media screen and (max-width: 650px) {} */

@@ -1,5 +1,36 @@
 .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #495e57; /* Light background */
+  }
+
+  .content {
+    display: flex;
+    align-items: center; /* Vertically aligns text and image */
+    gap: 20px; /* Adds spacing between text and image */
+    max-width: 900px; /* Keeps content from being too wide */
     padding: 20px;
-    text-align: center;
-    font-size: 18px;
+  }
+
+  .text-section {
+    flex: 1; /* Takes up remaining space */
+    text-align: left;
+  }
+
+  .image-section {
+    flex: 1; /* Takes up equal space */
+    display: flex;
+    justify-content: flex-end; /* Aligns image to the right */
+  }
+
+
+/* Image styling */
+.restaurant-img {
+    width: 100%; /* Responsive size */
+    max-width: 400px; /* Limits max image width */
+    height: auto;
+    border-radius: 10px; /* Optional: Rounds corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow */
   }
