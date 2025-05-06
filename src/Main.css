@@ -1,36 +1,72 @@
 .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #495e57; /* Light background */
-  }
+  display: block;
+  background-color: #495e57;
+  padding-bottom: 60px;
 
-  .content {
-    display: flex;
-    align-items: center; /* Vertically aligns text and image */
-    gap: 20px; /* Adds spacing between text and image */
-    max-width: 900px; /* Keeps content from being too wide */
-    padding: 20px;
-  }
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+  padding: 80px 0;
+}
+
+.main-container,
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+
+}
+
 
   .text-section {
-    flex: 1; /* Takes up remaining space */
-    text-align: left;
+    flex: 1;
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* ✅ aligns text inside the block to the left */
+  align-self: flex-start;
+
   }
+  .content {
+    padding: 80px 0;
+  }
+
+  .text-section h2 {
+    font-size: 30px;
+    margin-top: 2px;
+  }
+
+.text-section .subheading {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.text-section .description {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
 
   .image-section {
-    flex: 1; /* Takes up equal space */
+    flex: 1;
     display: flex;
-    justify-content: flex-end; /* Aligns image to the right */
+    justify-content: center;
+    position: relative;
+    height: 0;
   }
 
 
-/* Image styling */
-.restaurant-img {
-    width: 100%; /* Responsive size */
-    max-width: 400px; /* Limits max image width */
-    height: auto;
-    border-radius: 10px; /* Optional: Rounds corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow */
+  .restaurant-img {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    transform: translate(-60%, 3%);  /* ✅ centered, with 20% dip down */
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
   }

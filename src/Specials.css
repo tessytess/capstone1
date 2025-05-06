@@ -1,0 +1,54 @@
+.specials-section {
+    padding: 60px 20px;
+    background-color: #fefae0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .specials-section h2 {
+    text-align: left;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .specials-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .special-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .special-img {
+    width: 100%;
+    border-radius: 8px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .special-info h3 {
+    margin-bottom: 5px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #495e57;
+    margin-bottom: 10px;
+  }
+  
