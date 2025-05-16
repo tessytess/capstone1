@@ -31,7 +31,6 @@ export default function BookingPage() {
     if (await submitAPI(formData)) {
 
       setBookingData(prev => [...prev, formData]);
-
       navigate('/reservations/confirmed');
     } else {
       alert('Sorry, that time is no longer available.');
@@ -53,8 +52,7 @@ export default function BookingPage() {
         dispatch={dispatch}
         onSubmit={submitForm}
       />
-      <h2>Existing Reservations</h2>
-      <BookingList data={bookingData} />
+
     </div>
   );
 }

@@ -12,7 +12,7 @@ function Main() {
       <div className="content">
         <div className="text-section">
           <h1>Little Lemon</h1>
-          <h2 className="subheading">Chicago</h2>  {/* ✅ Added a class */}
+          <h2 className="subheading">Chicago</h2>
           <h5 className="description">Fresh Mediterranean cuisine made with love.</h5>
         </div>
         <div className="image-section">

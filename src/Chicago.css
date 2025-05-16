@@ -1,0 +1,41 @@
+/* src/Chicago.css */
+.chicago {
+    padding: 2rem 0;
+    color: white
+  }
+
+  .chicago-text p { color: white; }
+
+  .chicago-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .chicago-text {
+    flex: 1;
+    padding: 0 1rem;
+  }
+
+  .chicago-text p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .chicago-image {
+    flex: 0 0 auto;
+  }
+
+  .chicago-image img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+  }
+
